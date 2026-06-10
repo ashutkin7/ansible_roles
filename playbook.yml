@@ -12,4 +12,3 @@
       - "mehmat.ru"
   roles:
     - nginx_vhosts
-
