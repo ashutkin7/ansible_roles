@@ -1,0 +1,23 @@
+2026-06-10 17:57:52,121 p=16344 u=taskuser n=ansible | PLAY [Install nginx with Virtual Hosts] ****************************************
+2026-06-10 17:57:52,137 p=16344 u=taskuser n=ansible | TASK [nginx_vhosts : Install nginx] ********************************************
+2026-06-10 17:57:58,379 p=16344 u=taskuser n=ansible | ok: [10.0.2.15]
+2026-06-10 17:57:58,387 p=16344 u=taskuser n=ansible | TASK [nginx_vhosts : Create sites folders] *************************************
+2026-06-10 17:57:59,289 p=16344 u=taskuser n=ansible | ok: [10.0.2.15] => (item=etis.com)
+2026-06-10 17:57:59,915 p=16344 u=taskuser n=ansible | ok: [10.0.2.15] => (item=fizfak.com)
+2026-06-10 17:58:00,552 p=16344 u=taskuser n=ansible | ok: [10.0.2.15] => (item=mehmat.ru)
+2026-06-10 17:58:00,564 p=16344 u=taskuser n=ansible | TASK [nginx_vhosts : Copy nginx config from template] **************************
+2026-06-10 17:58:02,004 p=16344 u=taskuser n=ansible | ok: [10.0.2.15] => (item=etis.com)
+2026-06-10 17:58:03,192 p=16344 u=taskuser n=ansible | ok: [10.0.2.15] => (item=fizfak.com)
+2026-06-10 17:58:04,370 p=16344 u=taskuser n=ansible | ok: [10.0.2.15] => (item=mehmat.ru)
+2026-06-10 17:58:04,380 p=16344 u=taskuser n=ansible | TASK [nginx_vhosts : Enable nginx vhosts sites via symlinks] *******************
+2026-06-10 17:58:05,078 p=16344 u=taskuser n=ansible | ok: [10.0.2.15] => (item=etis.com)
+2026-06-10 17:58:05,702 p=16344 u=taskuser n=ansible | ok: [10.0.2.15] => (item=fizfak.com)
+2026-06-10 17:58:06,327 p=16344 u=taskuser n=ansible | ok: [10.0.2.15] => (item=mehmat.ru)
+2026-06-10 17:58:06,338 p=16344 u=taskuser n=ansible | TASK [nginx_vhosts : Remove default nginx configuration] ***********************
+2026-06-10 17:58:07,004 p=16344 u=taskuser n=ansible | ok: [10.0.2.15]
+2026-06-10 17:58:07,013 p=16344 u=taskuser n=ansible | TASK [nginx_vhosts : Copy index from template] *********************************
+2026-06-10 17:58:08,253 p=16344 u=taskuser n=ansible | ok: [10.0.2.15] => (item=etis.com)
+2026-06-10 17:58:09,419 p=16344 u=taskuser n=ansible | ok: [10.0.2.15] => (item=fizfak.com)
+2026-06-10 17:58:10,625 p=16344 u=taskuser n=ansible | ok: [10.0.2.15] => (item=mehmat.ru)
+2026-06-10 17:58:10,644 p=16344 u=taskuser n=ansible | PLAY RECAP *********************************************************************
+2026-06-10 17:58:10,645 p=16344 u=taskuser n=ansible | 10.0.2.15                  : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
